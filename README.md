@@ -4,7 +4,7 @@ code for [On the Application of Danskin’s Theorem to Derivative-Free Minimax O
 
 ### Installation:
 
-- Under `src/helper_files` you can find `environment.yml` which lists the requirements. If you have `conda`:
+- `src/environment.yml` lists the package dependencies. If you have `conda`:
 ```
 conda env create -f ./environment.yml
 ```
@@ -35,4 +35,13 @@ python utils/generate_plots.py
 
 Figures will be generated under `experiments/results/figs/` corresponding to json files in `experiments/results`
 
+### Statistical validity of experiments
 
+The statstical difference between experiments from different datasets and techniques is measured using the Nemenyi test, at a signficance level of 0.05 [1]
+
+`Orange`, a data-mining library has been used to calculate the critical difference (CD) measures and generate their plots. Specifically, the `graph_ranks` method from `Orange.evaluation.scoring` generates the CD-plots shown in our paper.
+
+The plotting script can be found at `/src/utils/plot_cd.py` 
+
+#### Reference
+[1] Demšar, Janez. "Statistical comparisons of classifiers over multiple data sets." Journal of Machine learning research 7.Jan (2006): 1-30.
