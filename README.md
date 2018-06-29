@@ -4,7 +4,7 @@ code for [On the Application of Danskin’s Theorem to Derivative-Free Minimax O
 
 ### Installation:
 
-- `src/environment.yml` lists the package dependencies. If you have `conda`:
+- `environment.yml` lists the package dependencies. If you have `conda`:
 ```
 conda env create -f ./environment.yml
 ```
@@ -41,7 +41,7 @@ The statstical difference between experiments from different datasets and techni
 
 `Orange`, a data-mining library has been used to calculate the critical difference (CD) measures and generate their plots. Specifically, the `graph_ranks` method from `Orange.evaluation.scoring` generates the CD-plots shown in our paper.
 
-The plotting script can be found at `/src/utils/plot_cd.py` 
+The plotting script can be found at `utils/plot_cd.py` 
 
 #### Reference
 [1] Demšar, Janez. "Statistical comparisons of classifiers over multiple data sets." Journal of Machine learning research 7.Jan (2006): 1-30.
