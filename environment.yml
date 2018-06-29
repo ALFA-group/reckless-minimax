@@ -1,0 +1,11 @@
+name: reckless
+dependencies:
+  - python=2.7
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - Orange
+  - pip:
+    - cma
